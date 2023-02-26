@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  /* background-color: #131312; */
+  font-family: 'Poppins' , sans-serif;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+}
+
+header{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid #fff; */
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background-image: url("/assets/img/3.jpg");
+  background-size: cover;
+}
+
+header .menu_side{
+  width: 12%;
+  height: 90%;
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  background: rgba(10, 10, 10, 0.09);
+  transition: .5s linear;
+  /* align-items: center; */
+}
+
+header .menu_side .logo_content{
+  /* border: 1px solid #000; */
+  width: 100%;
+  height: 8%;
+  position: absolute;
+  display: flex;
+  background: url("/assets/img/logo-dark.svg");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position-x: 28px;
+  background-position-y: 50%;
+}
+
+header .menu_side .logo_content a{
+  width: 100%;
+  height: 100%;
+}
+
+
+header .menu_side .logo_content .logo{
+  color:rgba(36, 38, 39, 0.75);
+  font-size: 35px;
+  display: flex;
+  margin-left: 15px;
+  align-items: center;
+  padding-left: 15px;
+  /* justify-content: center; */
+  top: 15px;
+}
+
+header .menu_side .btn_content{
+  width: 100%;
+  height: 92%;
+  /* border: 1px solid #000; */
+  position: absolute;
+  display: flex;
+  top: 8%;
+}
+
+header .menu_side .btn_content .btn_header{
+  width: 100%;
+  height: 24%;
+  position: absolute;
+}
+
+
+
+header .menu_side .btn_content .btn_bottom{
+  width: 100%;
+  height: 25%;
+  position: relative;
+  top: 27%;
+  overflow: hidden;
+}
+
+header .menu_side .btn_content .btn_bottom li{
+  list-style-type: none;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-left: 25px;
+  align-items: center;
+}
+
+header .menu_side .btn_content .btn_header li{
+  list-style-type: none;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-left: 25px;
+  align-items: center;
+}
+
+header .menu_side .btn_content .btn_vip{
+  width: 100%;
+  height: 15%;
+  position: absolute;
+  /* border: 1px solid #000; */
+  top:52%;
+  justify-content: center;
+  align-items: center;
+}
+header .menu_side .btn_content .btn_vip .nav_vip{
+  height: 100%;
+  width: 90%;
+  margin-left: 5%;
+  /* border: 1px solid #000; */
+  border-radius: 10px;
+  background-image: linear-gradient(117deg,#5a4be7,#c86dd7 102%);
+}
+
+header .menu_side .btn_content .btn_vip .nav_vip .title{
+  width: 100%;
+  height: 50%;
+  /* justify-content: space-between; */
+  padding-top: 5px;
+}
+
+header .menu_side .btn_content .btn_vip .nav_vip .title .sup_title{
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  margin-top:7%;
+}
+
+header .menu_side .btn_content .btn_vip .nav_vip .button_vip{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .menu_side .btn_content .btn_vip .nav_vip .button_vip .button_mua{
+  width:60%;
+  margin-left: 20%;
+  height: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+  background-color: #f8e71c;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+
+header .menu_side .btn_content .btn_header a,.btn_bottom a{
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+
+header .menu_side .btn_content .btn_header span,.btn_bottom span{
+  color: rgba(19, 18, 19, 0.809);
+  font-size: 14px;
+  font-weight: 500;
+  align-items: center;
+}
+
+header .menu_side .btn_content .btn_header i,.btn_bottom i{
+  font-size: 17px;
+  color: rgba(19, 18, 19, 0.809);
+  align-items: center;
+}
+
+header .menu_side .btn_content .btn_header a span,.btn_bottom a span{
+  padding-left: 10px;
+}
+header .menu_side .btn_content .personal_album{
+  width: 100%;
+  height: 33%;
+  /* border: 1px  solid #fff; */
+  /* overflow: auto; */
+  display: flex;
+  position: absolute;
+  bottom: 0;
+}
+header .menu_side .btn_content .personal_album .personal_header{
+  width: 100%;
+  height: 17%;
+  margin-top: 5%;
+  /* border: 1px solid #fff; */
+  position: absolute;
+  display: flex;
+  align-items: center;
+  color: rgba(19, 18, 19, 0.809);
+}
+header .menu_side .btn_content .personal_album .personal_header h3{
+  font-size: 14px;
+  margin-left: 10%;
+  font-weight: 600;
+}
+header .menu_side .btn_content .personal_album .personal_header i{
+  padding-left: 43%;
+  font-size: 14px;
+}
+header .menu_side .btn_content .personal_album .personal_content{
+  width: 100%;
+  height: 60%;
+  position: absolute;
+  display: flex;
+  top:22%;
+  overflow: auto;
+}
+header .menu_side .btn_content .personal_album .personal_content ul{
+  margin-left: 10%;
+  list-style-type: none;
+}
+header .menu_side .btn_content .personal_album .personal_content ul li{
+  margin-bottom: 15px;
+  margin-top: 15px;
+  display: flex;
+}
+header .menu_side .btn_content .personal_album .personal_content ul li span{
+  margin-left: 14px;
+  font-size: 15px;
+  color: rgba(19, 18, 19, 0.809);
+  text-align: center;
+  font-weight: 400;
+}
+header .menu_side .btn_content .personal_album .personal_content ul li .playlist_person{
+  font-size: 12px;
+  font-weight: 500;
+}
+header .menu_side .btn_content .personal_album .personal_content::-webkit-scrollbar{
+  display: none;
+}
+
+header .nav_side{
+  position: absolute;
+  width: 66%;
+  height: 8%;
+  display: flex;
+  left: 12%;
+  background: rgba(10, 10, 10, 0.04);
+}
+
+header .nav_side .container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+header .nav_side .container ul{
+  display: flex;
+  margin-left: 30px;
+  margin-right: 20px;
+}
+
+header .nav_side .container ul li{
+  list-style: none;
+  position: relative;
+  font-size: 30px;
+  padding: 10px 0px 0px 10px;
+  font-weight: 200;
+  color:rgba(34, 31, 31, 0.456);
+  margin-left: 10px;
+}
+
+
+header .nav_side .container .search{
+  position: relative;
+  width: 40%;
+  color:rgba(15, 14, 14, 0.564);
+  z-index: 1;
+  /* border: 1px solid #000; */
+}
+
+header .nav_side .container .search::before{
+  content: "";
+  position: absolute;
+  display: flex;
+  width:90%;
+  height: 100%;
+  background: rgba(92, 90, 90, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(0.2px);
+  z-index: 0.5;
+}
+
+header .nav_side .container .search .bx{
+  font-size: 27px;
+  top: 15px;
+  padding: 3px 0px 0px 10px;
+}
+
+header .nav_side .container .search #text_search{
+  border: none;
+  outline: none;
+  background: none;
+  color: rgba(17, 16, 16, 0.744);
+  align-items: center;
+  font-size: 12px;
+  width: 40%;
+  position: absolute;
+  top:10px;
+}
+header .nav_side .container #nav_user{
+  width: 23%;
+  height: 100%;
+  /* border: 1px solid #000; */
+  position: absolute;
+  display: flex;
+  right: 0;
+  justify-content: center;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+}
+
+header .nav_side .container #nav_user li{
+  /* position: relative; */
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  justify-content: center;
+  top:19%;
+  background-color: rgba(0, 0, 0, 0.095);
+  align-items: center;
+  /* margin-left: 50px; */
+}
+
+header .nav_side .container #nav_user li i{
+  font-size: 22px;
+  top: -4.5px;
+  left: -1px;
+  position: relative;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.952);
+}
+header .nav_side .container #nav_user #img_user{
+  background: none;
+}
+header .nav_side .container #nav_user li i:hover{
+  color: aqua;
+  transition: .3s linear;
+}
+
+
+header .nav_side .container #nav_user li img{
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  position: relative;
+  margin-top: -8px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+header .main{
+  width: 66%;
+  /* border: 1px solid #000; */
+  position: relative;
+  height: 82%;
+  top: 8%;
+  background: rgba(10, 10, 10, 0.04);
+}
+
+header .song_side{
+  width: 22%;
+  position: relative;
+  background: rgba(10, 10, 10, 0.09);
+  height: 90%;
+  display: flex;
+  /* top: 8%; */
+}
+
+header .song_side .header_songs{
+  width: 100%;
+  height: 7%;
+  /* border: 1px solid #000; */
+  position: relative;
+  display: flex;
+  top: 10px;
+  align-items: center;
+}
+
+header .song_side .header_songs .title{
+  width: 63%;
+  margin-left: 6%;
+  margin-right: 6%;
+  height: 80%;
+  /* border: 1px solid red; */
+  display: flex;
+  position: relative;
+  border-radius: 30px;
+  background:rgba(10, 10, 10, 0.09);
+}
+
+header .song_side .header_songs .title .header_title_songs{
+  width: 50%;
+  height: 100%;
+  /* border: 1px solid #000; */
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .song_side .header_songs .title .header_title_songs .header_title_songs_content{
+  width: 97%;
+  height: 80%;
+  display: flex;
+  background: rgba(255, 255, 255, 0.567);
+  position: relative;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+header .song_side .header_songs .title .header_title_songs .header_title_songs_content h5{
+  font-weight: 500;
+  color: rgba(172, 44, 163, 0.928);
+  font-size: 13px;
+}
+
+
+header .song_side .header_songs .title .bottom_title_songs{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  /* border: 1px solid green; */
+  border-radius: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+header .song_side .header_songs .title .bottom_title_songs h5{
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.928);
+}
+header .song_side .header_songs .btn_header_songs{
+  width: 25%;
+  height: 100%;
+  border: 1px solid blue;
+  display: flex;
+  position: relative;
+}
+header .song_side .header_songs .btn_header_songs ul{
+  position: relative;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-items: center;
+}
+header .master_play{
+  width: 100%;
+  height: 10%;
+  /* border: 1px solid #000; */
+  position: fixed;
+  display: flex;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  /* background: rgba(218, 99, 188, 0.914); */
+}
